@@ -14,14 +14,19 @@ import {  MatInputModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatNativeDateModule} from '@angular/material';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { PopUpComponent } from './pop-up/pop-up.component';
+
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PopUpComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +42,14 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     ReactiveFormsModule,
     MatToolbarModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatRadioModule,
+    MatDialogModule
+   
     
   ],
+  entryComponents: [PopUpComponent],
+
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
