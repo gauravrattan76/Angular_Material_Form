@@ -10,6 +10,17 @@
       <mat-form-field class="form-element">
          <input matInput placeholder="Emailaddress" formControlName="email">
       </mat-form-field>
+      <div formGroupName="skills">
+         <mat-form-field class="form-element">
+            <input matInput placeholder="SkillName" formControlName="skillName">
+         </mat-form-field>
+         <mat-form-field class="form-element">
+            <input matInput placeholder="SkillName" formControlName="skillName">
+         </mat-form-field>
+         <mat-form-field class="form-element">
+            <input matInput placeholder="Proficiency" formControlName="proficiency">
+         </mat-form-field>
+      </div>
       <button mat-raised-button type="submit" color="primary">LOGIN</button>
    </form>
 </div>

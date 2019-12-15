@@ -18,7 +18,12 @@ export class AppComponent implements OnInit{
 ngOnInit(){
   this.employeeForm = this.fb.group({
     fullName: ['Gaurav'],
-    email: ['gauravrattan76@gmail.com']
+    email: ['gauravrattan76@gmail.com'],
+    skills: this.fb.group({
+      skillName: ['Dot net'],
+      experienceInYears: ['5'],
+      proficiency: ['beginner']
+    })
   });
 }
 
