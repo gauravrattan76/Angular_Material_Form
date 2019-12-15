@@ -10,6 +10,11 @@ export interface DialogData {
   name: string;
 }
 
+export interface Food {
+  value: string;
+  viewValue: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -39,12 +44,18 @@ ngOnInit(){
   });
 }
 
+foods: Food[] = [
+  {value: 'steak-0', viewValue: 'Steak'},
+  {value: 'pizza-1', viewValue: 'Pizza'},
+  {value: 'tacos-2', viewValue: 'Tacos'}
+];
+
 onSubmit(){
   console.log(this.employeeForm.value);
 }
 openDialog(): void {
   const dialogRef = this.dialog.open(PopUpComponent, {
-    width: '500px',
+    width: '1000px',
     data: {name: "Gaurav", animal: "Rattan"}
   });
 

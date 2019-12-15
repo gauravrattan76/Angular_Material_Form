@@ -19,6 +19,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { PopUpComponent } from './pop-up/pop-up.component';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -44,7 +45,8 @@ import { PopUpComponent } from './pop-up/pop-up.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSelectModule
    
     
   ],
