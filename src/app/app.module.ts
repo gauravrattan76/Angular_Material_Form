@@ -13,7 +13,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {  MatInputModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatNativeDateModule} from '@angular/material';
 
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 
@@ -33,10 +35,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatNativeDateModule
     
   ],
-  providers: [],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

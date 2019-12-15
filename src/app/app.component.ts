@@ -19,6 +19,7 @@ ngOnInit(){
   this.employeeForm = this.fb.group({
     fullName: ['Gaurav'],
     email: ['gauravrattan76@gmail.com'],
+    date: [''],
     skills: this.fb.group({
       skillName: ['Dot net'],
       experienceInYears: ['5'],
